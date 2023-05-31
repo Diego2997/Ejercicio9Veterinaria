@@ -1,0 +1,10 @@
+.bg-form{
+    background-color: lightblue;
+}
+.textarea{
+    resize: none;
+}
+.textareaCitas{
+    resize: none;
+    height: auto;
+}
