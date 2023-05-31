@@ -1,19 +1,14 @@
 import { Container, Row,Col } from 'react-bootstrap';
 import CitasVeterinaria from './CitasVeterinaria';
 
-const ListadoCitasVeterinaria = () => {
+const ListadoCitasVeterinaria = ({citas,borrarCita}) => {
     return (
       <Container>
         <Row >
-            <Col lg={4} xs={12} md={6}>
-            <CitasVeterinaria/>
-            </Col>
-            <Col lg={4} xs={12} md={6}>
-            <CitasVeterinaria/>
-            </Col>
-            <Col lg={4} xs={12} md={6}>
-            <CitasVeterinaria/>
-            </Col>
+          {citas.map((cita,index)=>
+          <Col lg={4} md={6} xs={12}>
+            <CitasVeterinaria key={index} cita={cita} borrarCita={borrarCita}/>
+            </Col>)}
         </Row>
       </Container>
     );
