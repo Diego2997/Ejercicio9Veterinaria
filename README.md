@@ -1,5 +1,7 @@
 ## Ejercicio de React con Vite
 ## EJERCICIO 9 
+## DEMO
+1. [Proyecto](https://ejercicioreact9.netlify.app/)
 
 Este es un ejercicio que utiliza componentes, pasaje de props y un formulario que es manejado con la libreria React Hook Form para crear distintas cards con datos de una pelicula
 
