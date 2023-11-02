@@ -32,10 +32,11 @@ describe("Formulario Veterinaria", () => {
         cy.get("textarea[name='sintomas']").type(SINTOMAS_MASCOTA);
         cy.get("button[type='submit']").click();
         cy.contains(NOMBRE_MASCOTA);
+        cy.get(".cita").should("exist");
     });
 
     it("Deberia borrar la cita", () => {
         cy.get(".btn-danger").click();
-        cy.get("Card").should("not.exist");
+        cy.get(".cita").should("not.exist");
     });
 });
